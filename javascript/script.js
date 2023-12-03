@@ -2,7 +2,7 @@
 function resetFormLuas(){
     document.getElementById("inputAlas").value="";
     document.getElementById("inputTinggi").value="";
-    document.getElementById("resultLuas").textContent="Luas Segitiga adalah : "+ luas;
+    document.getElementById("resultLuas").textContent="";
 
 }
 
