@@ -12,7 +12,7 @@
     <div id="tentang">
         <h1>KALKULATOR LUAS DAN KELILING SEGITIGA - oleh HENDRI SAPUTRA</h1>
         <h4>
-            Selamat datang di proyek kecil-kecilan pada revoU Software Engineering Saya
+            Selamat datang di mini project pada revoU Software Engineering Saya
         </h4>
         <br>
     </div>
@@ -27,38 +27,41 @@
 <main>
     <div class="container-gambar">
         <h1 id="luas-segitiga">PENGHITUNG LUAS SEGITIGA</h1>
-        <img src="https://blog-static.mamikos.com/wp-content/uploads/2021/04/luas-segitiga.jpg" alt="rumus-luas-segitiga" width="350px">
+        <img src="img/rumus-luas-segitiga.png" alt="rumus-luas-segitiga" width="350px">
     </div>
     <section class="input-luas-section" >
-        <label for="input-alas" id="label-alas">Alas (a)</label>
-        <input type="number" id="input-alas" class="hendri-input">
+        <label for="inputAlas" id="label-alas">Alas (a)</label>
+        <input type="number" id="inputAlas" class="hendri-input" placeholder="Masukkan Panjang Alas Segitiga">
 
-        <label for="input-tinggi" id="label-tinggi">Tinggi (t)</label>
-            <input type="number" id="input-tinggi" class="hendri-input">
+        <label for="inputTinggi" id="label-tinggi">Tinggi (t)</label>
+            <input type="number" id="inputTinggi" class="hendri-input" placeholder="Masukkan Tinggi Segitiga">
         <div class="buttons">
-            <button>Hitung</button>
+            <button onclick="kalkulatorLuas()">Hitung</button>
             <button onclick="resetFormLuas()">Reset</button>
         </div>
+        <p id="resultLuas"></p>
     </section>
     <!--END LUAS SEGITIGA-->
     <div class="container-gambar">
         <h1 id="keliling-segitiga">PENGHITUNG KELILING SEGITIGA</h1>
-        <img src="https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/24/2022/10/6-4.jpg" alt="rumus-keliling-segitiga" width="350px">
+        <img src="img/rumus-keliling-segitiga.png" alt="rumus-keliling-segitiga" width="350px">
     </div>
     <section class="input-luas-section" >
-        <label for="input-sisi-1" id="label-sisi-1">(1) Sisi</label>
-        <input type="number" id="input-sisi-1" class="hendri-input">
+        <label for="inputSisi1" id="label-sisi-1">(1) Sisi</label>
+        <input type="number" id="inputSisi1" class="hendri-input" placeholder="Masukkan Panjang Sisi Segitiga">
 
-        <label for="input-sisi-2" id="label-sisi-2">(2) Sisi</label>
-            <input type="number" id="input-sisi-2" class="hendri-input">
+        <label for="inputSisi2" id="label-sisi-2">(2) Sisi</label>
+            <input type="number" id="inputSisi2" class="hendri-input" placeholder="Masukkan Panjang Sisi Segitiga">
 
         <label for="input-sisi-3" id="label-sisi-3">(3) Sisi</label>
-        <input type="number" id="input-sisi-3" class="hendri-input">
+        <input type="number" id="inputSisi3" class="hendri-input" placeholder="Masukkan Panjang Sisi Segitiga">
 
         <div class="buttons">
-            <button>Hitung</button>
+            <button onclick="kalkulatorKeliling()">Hitung</button>
             <button onclick="resetFormKeliling()">Reset</button>
         </div>
+
+        <p id="resultKeliling"></p>
     </section>
 </main>
 <footer>
